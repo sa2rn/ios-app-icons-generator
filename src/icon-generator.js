@@ -9,13 +9,13 @@ function getSize(size) {
   const [width, height] = size.split('x');
 
   return {
-    width: parseInt(width, 10),
-    height: parseInt(height, 10),
+    width: parseFloat(width, 10),
+    height: parseFloat(height, 10),
   };
 }
 
 function getScale(scale) {
-  return scale ? parseInt(scale.split('x')[0], 10) : 1;
+  return scale ? parseFloat(scale.split('x')[0], 10) : 1;
 }
 
 class IconGenerator {
