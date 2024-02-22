@@ -1,6 +1,6 @@
 {
   "name": "ios-app-icons-generator",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "IOS App Icons Generator",
   "type": "module",
   "bin": {
