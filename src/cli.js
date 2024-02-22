@@ -9,7 +9,8 @@ import IconGenerator from './icon-generator.js';
 
 try {
   const outputDir = path.join(process.cwd(), 'Assets.xcassets');
-  const assets = await fs.readdir(outputDir);
+  const files = await fs.readdir(outputDir);
+  const assets = files.filter((file) => file.endsWith('.appiconset'));
 
   const { asset } = await prompts({
     type: 'select',
