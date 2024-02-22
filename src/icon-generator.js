@@ -49,7 +49,7 @@ class IconGenerator {
   async #createImage(image) {
     const size = getSize(image.size);
     const scale = getScale(image.scale);
-    const filename = `AppIcon-${image.size}@${image.scale}.png`;
+    const filename = `AppIcon-${size.width}x${size.height}@${scale}x-${image.idiom}.png`;
 
     await sharp(this.#originalIconPath)
       .resize({
