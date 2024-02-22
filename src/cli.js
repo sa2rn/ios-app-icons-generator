@@ -1,10 +1,11 @@
 #!/usr/bin/env node
+/* eslint-disable import/extensions */
 import process from 'node:process';
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import prompts from 'prompts';
 import minimist from 'minimist';
-import IconGenerator from './icon-generator';
+import IconGenerator from './icon-generator.js';
 
 try {
   const outputDir = path.join(process.cwd(), 'Assets.xcassets');
