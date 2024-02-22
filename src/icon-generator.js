@@ -15,7 +15,7 @@ function getSize(size) {
 }
 
 function getScale(scale) {
-  return parseInt(scale.split('x')[0], 10);
+  return scale ? parseInt(scale.split('x')[0], 10) : 1;
 }
 
 class IconGenerator {
