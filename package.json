@@ -5,6 +5,9 @@
   "type": "module",
   "bin": "src/cli.js",
   "license": "ISC",
+  "engines": {
+    "node": ">=18.17.0"
+  },
   "dependencies": {
     "minimist": "^1.2.8",
     "prompts": "^2.4.2",
