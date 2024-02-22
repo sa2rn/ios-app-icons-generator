@@ -41,9 +41,7 @@ class IconGenerator {
     const filename = await this.#createImage(image);
 
     return {
-      idiom: image.idiom,
-      size: image.size,
-      scale: image.scale,
+      ...image,
       filename,
     };
   }
