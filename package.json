@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "IOS App Icons Generator",
   "type": "module",
-  "bin": "src/cli.js",
+  "bin": {
+    "ios-app-icons": "./src/cli.js"
+  },
   "license": "ISC",
   "engines": {
     "node": ">=18.17.0"
